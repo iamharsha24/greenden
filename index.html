@@ -11,10 +11,11 @@
   </head>
   <body>
 
+    <!-- Navbar -->
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
       <h1 class="text-2xl">GREENDEN</h1>
 
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+      <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
       
@@ -31,6 +32,25 @@
       </ul>
     </nav>
 
+    <!-- Side Navbar -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duriation-1000" style="height: 100vh; width: 50%; right: -50%;">
+      <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-600">
+        <li>
+          <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Header -->
     <section class="bg-green-100 p-4 md:p-10 flex justify-center">
       <div>
         <p class="mb-4">We offer you a wide range of Artificial and Natural Flowers</p>
@@ -46,6 +66,7 @@
       </div>
     </section>
 
+    <!-- About -->
     <section class="text-center">
       <h1 class="text-3xl font-bold mt-5">About Us</h1>
       <p>This site is for those who admire the beauty and harmony of nature.</p>
@@ -77,36 +98,38 @@
       </div>
     </section>
 
+    <!-- Image -->
     <section class="p-4 text-center">
       <h1 class="text-3xl font-bold mt-5">Best Seller</h1>
       <div class="grid mt-5 gap-5 grid-cols-2 md:grid-cols-4">
         <div>
           <img src="./images/bestseller1.jpg" height="250" width="200" alt="bonsai image"
           class="inline hover:shadow-xl transform hover:-translate-y-2">
-          <p class="font-bold text-center">Bonsai Plant</p>
+          <h1 class="font-bold text-center">Bonsai Plant</h1>
           <p class="text-center">&#8377 200</p>
         </div>
         <div>
           <img src="./images/bestseller2.jpg" height="200" width="200" alt="bonsai image"
           class="inline hover:shadow-xl transform hover:-translate-y-2">
-          <p class="font-bold text-center">Bonsai Plant</p>
+          <h1 class="font-bold text-center">Bottle Plant</h1>
           <p class="text-center">&#8377 200</p>
         </div>
         <div>
           <img src="./images/bestseller1.jpg" height="200" width="200"  alt="bonsai image"
           class="inline hover:shadow-xl transform hover:-translate-y-2">
-          <p class="font-bold text-center">Bonsai Plant</p>
+          <h1 class="font-bold text-center">Bonsai Plant</h1>
           <p class="text-center">&#8377 200</p>
         </div>
         <div>
           <img src="./images/bestseller2.jpg" height="200" width="200"  alt="bonsai image"
           class="inline hover:shadow-xl transform hover:-translate-y-2">
-          <p class="font-bold text-center">Bonsai Plant</p>
+          <h1 class="font-bold text-center">Bottle Plant</h1>
           <p class="text-center">&#8377 200</p>
         </div>
       </div>
     </section>
 
+    <!-- Review -->
     <section>
       <h1 class="text-3xl font-bold mt-5 text-center">Customer Reviews</h1>
       <div class="flex flex-col gap-5 justify-center text-white m-5">
@@ -125,6 +148,7 @@
       </div>
     </section>
 
+    <!-- Subscribe -->
     <section class="text-center">
       <h1 class="text-3xl font-bold mt-5 text-center">Join Our News Letter</h1>
       <p>Signup for our email newspaper to get exclusive discounts, updates and more</p>
@@ -132,6 +156,7 @@
       <button class="bg-black text-white p-3 m-2 underline">Subscribe</button>
     </section>
  
+    <!-- Footer -->
     <footer>
       <section class="bg-green-100 p-10">
         <h1 class="text-4xl font-bold">GreenDen</h1>
@@ -139,5 +164,7 @@
         <p class="pt-5">&copy; 2024 greenden.com</p>
       </section>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
